@@ -1,139 +1,156 @@
-# Hospital ERP - Hệ thống Quản lý Kho Bệnh viện
+# 🏥 Hospital ERP System
 
-## Giới thiệu
+<div align="center">
 
-Hospital ERP là một hệ thống quản lý kho bệnh viện hiện đại, được xây dựng bằng công nghệ Nuxt 3 và Vuetify. Hệ thống cung cấp giao diện người dùng thân thiện và các tính năng quản lý kho toàn diện cho bệnh viện.
+![Nuxt 3](https://img.shields.io/badge/Nuxt-3-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white)
+![Vuetify 3](https://img.shields.io/badge/Vuetify-3-1867C0?style=for-the-badge&logo=vuetify&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 
-## Công nghệ sử dụng
+A modern Hospital ERP system built with Nuxt 3 and Vuetify 3, designed to streamline hospital management processes.
 
-- **Framework**: Nuxt 3
-- **UI Framework**: Vuetify 3
-- **State Management**: Pinia
-- **Ngôn ngữ**: TypeScript
-- **Style**: SCSS
-- **Các thư viện chính**:
-  - Vue 3
-  - Vuetify 3.8.5 (Material Design Framework)
-  - Axios
-  - date-fns
-  - vue3-perfect-scrollbar
-  - @nuxt/image
-  - @vueuse/nuxt
-  - @mdi/font (Material Design Icons)
-  - vite-plugin-vuetify
+</div>
 
-## Cấu trúc thư mục
+## ✨ Features
 
-```
-src/
-├── assets/        # Tài nguyên tĩnh (SCSS, hình ảnh)
-├── components/    # Components Vue
-│   ├── common/    # Components dùng chung
-│   ├── features/  # Components cho tính năng cụ thể
-│   ├── forms/     # Components form
-│   └── layouts/   # Components layout
-├── composables/   # Composables Vue
-├── constants/     # Các hằng số
-├── layouts/       # Layouts trang
-├── middleware/    # Middleware Nuxt
-├── pages/         # Các trang
-├── plugins/       # Plugins Vue/Nuxt
-├── stores/        # Pinia stores
-├── types/         # TypeScript types
-└── utils/         # Các hàm tiện ích
-```
+- 🚀 Built with [Nuxt 3](https://nuxt.com/) - the intuitive Vue framework
+- 🎨 Beautiful UI with [Vuetify 3](https://vuetifyjs.com/)
+- 📱 PWA Support with `@vite-pwa/nuxt`
+- 🔍 SEO optimized
+- 📦 State management with [Pinia](https://pinia.vuejs.org/)
+- 🎯 TypeScript support
+- 📝 ESLint + Prettier for code formatting
+- 🎨 SCSS/SASS support
+- 🖼️ Image optimization with `@nuxt/image`
+- 🔄 API integration ready with Axios
+- 📅 Date handling with `date-fns`
+- 🎭 Icons support with `@nuxt/icon`
 
-## Yêu cầu hệ thống
+## 🚀 Quick Start
 
-- Node.js phiên bản mới nhất
-- npm hoặc yarn
+### Prerequisites
 
-## Cài đặt
+- Node.js (v16 or higher)
+- npm or yarn or pnpm
 
-1. Clone repository
+### Installation
 
+1. Clone the repository
 ```bash
-git clone [repository-url]
+git clone <repository-url>
+cd hospital-erp
 ```
 
-2. Cài đặt dependencies
-
+2. Install dependencies
 ```bash
+# Using npm
 npm install
-# hoặc
+
+# Using yarn
 yarn install
+
+# Using pnpm
+pnpm install
 ```
 
-3. Tạo file môi trường
-   Tạo file `.env` với các biến môi trường sau:
-
-```env
-NODE_ENV=development
-API_BASE_URL=your_api_url
-WS_BASE_URL=your_websocket_url
-```
-
-## Các lệnh có sẵn
-
-### Phát triển
-
+3. Start development server
 ```bash
-# Chạy môi trường development
+# Using npm
 npm run dev
 
-# Chạy với clean cache
-npm run dev:clean
+# Using yarn
+yarn dev
 
-# Chạy bản preview
-npm run dev:preview
+# Using pnpm
+pnpm dev
 ```
 
-### Build và Production
+The application will be available at `http://localhost:3000`
+
+## 🛠️ Development Scripts
 
 ```bash
-# Build project
+# Start development server
+npm run dev
+
+# Build for production
 npm run build
 
-# Tạo static files
+# Preview production build
+npm run preview
+
+# Clean development server
+npm run dev:clean
+
+# Generate static site
 npm run generate
 
-# Chạy bản preview
-npm run preview
-```
-
-### Linting và Formatting
-
-```bash
-# Kiểm tra lỗi ESLint
+# Lint code
 npm run lint
 
-# Sửa lỗi ESLint
+# Fix lint issues
 npm run lint:fix
 
-# Format code với Prettier
+# Format code
 npm run format
 
-# Kiểm tra lỗi StyleLint
+# Run stylelint
 npm run stylelint
 
-# Sửa lỗi StyleLint
+# Fix stylelint issues
 npm run stylelint:fix
 ```
 
-## Tính năng chính
+## 🏗️ Project Structure
 
-- Giao diện người dùng hiện đại với Vuetify 3
-- Quản lý state với Pinia
-- Tích hợp TypeScript
-- Hỗ trợ SCSS
-- Auto-import components
-- Tối ưu hóa SEO
-- Responsive design
+```
+hospital-erp/
+├── src/               # Source files
+├── public/            # Static files
+├── .nuxt/            # Nuxt build directory
+├── dist/             # Production build
+├── .output/          # Nuxt output
+├── nuxt.config.ts    # Nuxt configuration
+├── tsconfig.json     # TypeScript configuration
+└── package.json      # Project dependencies
+```
 
-## Quy ước phát triển
+## 🔧 Configuration Files
 
-- Sử dụng TypeScript cho type-safety
-- Tuân thủ ESLint và Prettier cho code style
-- Tổ chức components theo tính năng và mục đích sử dụng
-- Sử dụng Composables cho logic tái sử dụng
-- Tuân thủ quy tắc đặt tên và cấu trúc thư mục
+- `.eslintrc.json` - ESLint configuration
+- `.prettierrc.json` - Prettier configuration
+- `.stylelintrc.json` - Stylelint configuration
+- `nuxt.config.ts` - Nuxt configuration
+- `tsconfig.json` - TypeScript configuration
+
+## 📦 Key Dependencies
+
+### Core
+- `nuxt` - v3.17.3
+- `vue` - v3.5.13
+- `vuetify-nuxt-module` - v0.18.6
+- `pinia` - v3.0.2
+
+### Development
+- `typescript` - v5.8.3
+- `eslint` - v8.55.0
+- `prettier` - v3.1.1
+- `sass` - v1.89.0
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+Made with ❤️ using Nuxt 3 and Vuetify 3
+</div>
