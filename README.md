@@ -30,8 +30,55 @@ A modern Hospital ERP system built with Nuxt 3 and Vuetify 3, designed to stream
 
 ### Prerequisites
 
-- Node.js (v16 or higher)
-- npm or yarn or pnpm
+- Node.js >= v16.0.0
+- One of the following package managers:
+  - npm >= v8.0.0
+  - yarn >= v1.22.0
+  - pnpm >= v8.0.0
+- Git >= v2.0.0
+- Memory >= 4GB RAM
+- Storage >= 1GB free space
+
+### Package Version Validation
+
+To ensure your environment meets the requirements, you can run these commands:
+
+```bash
+# Check Node.js version
+node --version
+
+# Check npm version
+npm --version
+
+# Check yarn version (if using yarn)
+yarn --version
+
+# Check pnpm version (if using pnpm)
+pnpm --version
+
+# Validate package.json dependencies
+npm install -g npm-check-updates
+ncu
+
+# Check for outdated packages
+npm outdated
+
+# Check for vulnerabilities
+npm audit
+```
+
+If you encounter any version mismatches, please update your packages accordingly:
+
+```bash
+# Update npm itself
+npm install -g npm@latest
+
+# Update all dependencies to their latest versions
+npm update
+
+# Update a specific package
+npm install package-name@latest
+```
 
 ### Installation
 

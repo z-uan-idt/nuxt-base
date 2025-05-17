@@ -1,7 +1,34 @@
 {
   "name": "hospital-erp",
+  "version": "1.0.0",
+  "description": "Modern Hospital ERP system built with Nuxt 3 and Vuetify 3",
   "private": true,
   "type": "module",
+  "author": {
+    "name": "Kieu Van Chuong",
+    "email": "vanchuongkieu@gmail.com"
+  },
+  "homepage": "https://github.com/z-uan-idt/nuxt-base#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-uan-idt/nuxt-base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/z-uan-idt/nuxt-base/issues"
+  },
+  "keywords": [
+    "hospital",
+    "erp",
+    "nuxt",
+    "vuetify",
+    "vue",
+    "typescript"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -52,5 +79,15 @@
     "stylelint-config-standard-scss": "^6.1.0",
     "typescript": "^5.8.3",
     "vuetify-nuxt-module": "^0.18.6"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{css,scss,vue}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
   }
 }

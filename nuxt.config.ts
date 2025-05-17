@@ -164,6 +164,9 @@ export default defineNuxtConfig({
       strict: false,
     },
   },
+  build: {
+    transpile: ['vuetify'],
+  },
   experimental: { typedPages: true },
   vue: { propsDestructure: true },
   vueuse: { ssrHandlers: true },
